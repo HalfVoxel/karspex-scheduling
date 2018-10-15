@@ -84,3 +84,8 @@ To run the program, use a terminal and point the program to the input file.
 ```
 ./a.out < example.txt
 ```
+
+Note that the program is non-determinstic, so running it multiple times will yield different outputs. Usually they are about equally good.
+For hard inputs, the program may hang indefinitely if it cannot find a solution. Restarting the program multiple times to allow it to start from different random starting points may allow it to find a solution in those cases.
+
+Internally the very very high level description of what the program does is that it takes the person with the currently lowest work burden and assigns it to the task that needs that person the most. It repeats this step until all tasks have enough people allocated to them.
