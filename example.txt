@@ -1,0 +1,10 @@
+Produktionschef,Ljus(A)	Scengruppen	Anna	A
+Skådis	Scengruppen	Bengt	B
+	Revisor	Caroline 	C
+Intresseklubben		Random Person 	R
+
+Teaterstuff	2	>Scengruppen !Revisor
+Pappersarbete	2	hard >Revisor
+Intresseklubben anntecknar	1	>Intresseklubben
+
+Pappersarbete	Teaterstuff
