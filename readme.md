@@ -75,6 +75,9 @@ Premiär ut campus | 12               | hard >KMP >Orkestern
 
 ### Pairwise constraints
 
+Use these constraints to prevent any person that works on a particular task from also working on another task.
+Usually these are distinct tasks that happen at the same time, but in different locations. Most people cannot be in multiple places at the same time.
+
 A list of lines on the format:
 ```
 taskname1<tab>taskname2
