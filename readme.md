@@ -1,3 +1,4 @@
+
 # Kårspex Scheduling
 
 Takes as input a list of people and which groups they belong to, as well as a list of tasks/events that they together need to participate in and calculates a somewhat good allocation of people to tasks.
@@ -29,6 +30,15 @@ Skådis	Scengruppen	Bengt	B
 	Revisor	Caroline 	C
 ```
 
+Since it is likely the user is writing the input using a spreadsheet program. Here is a table view of the same thing.
+Note however that the headers should **not** be included in the input data.
+
+| Groups                  | Groups      | First Name | Last Name  |
+| ----------------------- | ----------- | ---------- | ---------- |
+| Produktionschef,Ljus(A) | Scengruppen | Anna       | A          |
+| Skådis                  | Scengruppen | Bengt      | B          |
+|                         | Revisor     | Caroline   | C          |
+
 Q: Why are there two comma separated list of groups?
 A: Simply to allow copy-pasting from an existing spreadsheet. They are completely identical.
 
@@ -56,6 +66,13 @@ Checkis in	8	>KMP >Orkestern !Scengruppen !Ljushuvud
 Premiär ut campus	12	hard >KMP >Orkestern
 ```
 
+or as a table (remember headers are not included in the input data)
+
+Task name         | Number of people | Constraints
+----------------- | ---------------- | -----------
+Checkis in        | 8                | >KMP >Orkestern !Scengruppen !Ljushuvud
+Premiär ut campus | 12               | hard >KMP >Orkestern
+
 ### Pairwise constraints
 
 A list of lines on the format:
@@ -68,6 +85,8 @@ For example
 Premiär ut teatern	Premiär ut campus
 Omg 2 ut teatern	Omg 2 ut campus
 ```
+
+A full input example can be found in the file [example.txt](example.txt).
 
 ### Building
 
